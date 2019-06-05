@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family= Indie + Flower'); /*importando fonte direto do google */
+@font-face {
+    font-family: 'FonteLogo'; /*chamando minha fonte por este nome*/
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+body {
+    background-color: rgb(228, 151, 50);
+    color: black;
+}
+/*tudo que for parágrafo terá esta configuração */
+p{
+    font-family: 'Flor Indie', cursive; /*chamando a fonte pela config */
+    text-align: justify;
+    text-indent: 50px;
+    padding: 10px;
+    font-size: 20pt;
+}
+body {
+    background-color: rgb(24, 24, 26);
+}
+/* ---------------- APENAS DIVS ----------------- */
+div#interface {
+    width: 1200px;
+    height: 900px;
+    margin-left: 65px;
+    background-color: rgb(19, 18, 18);
+    box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+    border-radius: 7px 7px 7px 7px;
+    position: absolute;
+}
+
+div#cabeca-direita {
+    width: 1200px;
+    height: 140px;
+    background-color: rgb(26, 223, 43);
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 2px 2px 2px rgba(39, 39, 39, 0.5);
+    position: absolute;
+    margin-left: 1px;
+    position: absolute;
+}
+div#navegacao {
+    width: 1200px;
+    height: 60px;
+    background-color: rgb(26, 223, 43);
+    position: absolute;
+    margin-top: 150px;
+}
+
+div#rodape {
+    width: 1200px;
+    height: 50px;
+    background-color: rgb(26, 223, 43);
+    margin-top: 900px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    position: absolute;
+}
+/*configurando o menu de navegação */
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+   font-family: 'Flor Indie', cursive;
+   list-style: none;
+   position: absolute;
+   top: -10px;
+   left: 367px; 
+}
+nav#menu li {
+    display: inline-block;
+    background-color:rgb(8, 8, 8);
+    padding: 10px;
+    margin: 2px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, .5);
+    border-radius: 7px 7px 7px 7px;
+    transition: background-color 2s;
+}
+nav#menu a { /*tirando os links e alterando a cor das palavras no menu */
+    color: rgb(26, 223, 43);
+    text-decoration: none;
+    
+}
+nav#menu li:hover {
+    background-color: rgb(118, 197, 82); /*mudando cor na hora da transição */
+}
+nav#menu a:hover {
+    color: rgb(7, 7, 7);
+}
+
+/*configurando o corpo div do formulario, bem como os itens, como parcelas, etc */
+div#formulario_interface {
+    width: 1200px;
+    height: 890px;
+    background-color: rgb(19, 18, 18);
+    margin-top: 61px;
+    margin-left: 0px;
+    position: absolute;
+}
+div#formulario_interface form {
+    text-align: center;
+}
+div#formulario_interface label {
+    margin-left: 0px;
+}
+div#formulario_interface legend {
+    font-family: 'Flor Indie', cursive;
+    color: rgb(226, 219, 219);
+}
+div#formulario_interface input {
+    font-family: 'Flor Indie', cursive;
+    border-radius: 7px 7px 7px 7px;
+}
+div#formulario_interface p {
+    font-family: 'Flor Indie', cursive;
+    color: rgb(243, 246, 252);
+}
+div#formulario_resultado {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 590px;
+    color: rgb(226, 219, 219); 
+}
+div#formulario_resultado_parcelas {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 10px;
+    color: rgb(226, 219, 219);
+}
+
+/*configurando a arte da calculadora */
+div#campo_calculadora {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(40, 39, 41);
+    margin-top: 200px;
+    margin-left: 460px;
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 1px 1px rgb(104, 103, 102);
+}
+div#campo_calculadora table { /*move a caixa dos números de uma vez */
+    margin-left: 18px;
+    margin-top: 95px;
+}
+div#loteria {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(26, 223, 43);
+
+    margin-top: 350px;
+    margin-left: 216px;
+    position: absolute;
+    border-radius: 70px;
+    box-shadow: 2px 2px rgb(5, 5, 5);
+}
+div#loteria h4 {
+    margin-top: 33px;
+    text-align: left;   
+
+}
+div#loteria input {
+margin-top: 10px;
+margin-left: 290px;
+box-shadow: 1px 1px rgb(0, 255, 34);
+
+}
+/* ----------- APENAS CLASSES PARA FUNÇÕES ESPECIAIS --------------- */
+.submeter { /*chamando classe do botão no formulário */
+    font-family: 'Flor Indie', cursive;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    color: rgb(7, 7, 7);
+    position: relative;
+}
+.submeter:hover {
+    color: rgb(26, 223, 43);
+}
+.numero { /*estilizando toda classe dos botões */
+    border-radius: 100px;
+    font-family: 'Flor Indie', cursive;
+    font-size: 30px;
+    width: 60px;
+    height: 50px;
+    margin-left: 1px;
+    color: rgb(160, 160, 160);
+    background-color: rgb(29, 29, 29);
+    box-shadow: 1px 1px rgb(10, 10, 10);
+    transition: 1s;  
+}
+.numero:hover {
+    color: rgb(255, 0, 0);
+}
+.simbolosEspeciais {
+    border-radius: 100px;
+    font-family: 'Flor Indie', cursive;
+    font-size: 30px;
+    width: 60px;
+    height: 50px;
+    margin-left: 1px;
+    color: rgb(7, 7, 7);
+    background-color: rgb(153, 152, 152);
+    box-shadow: 1px 1px rgb(10, 10, 10);
+    transition: 1s;  
+}
+.simbolosEspeciais:hover {
+    color: rgb(255, 0, 0);
+
+}
+.simbolosEspeciaisVermelhos {
+    position: absolute;
+    border-radius: 100px;
+    font-family: 'Flor Indie', cursive;
+    font-size: 30px;
+    width: 186px;
+    height: 50px;
+    margin-left: 4px;
+    margin-top: -23px;
+    color: rgb(7, 7, 7);
+    background-color: rgb(240, 0, 0);
+    box-shadow: 1px 1px rgb(10, 10, 10);    
+}
+
+.exibeResultado { /*input que mostra os valores da calculadora, sendo chamado como classe */
+    position: absolute;
+    border-radius: 10px;
+    font-family: 'Flor Indie', cursive;
+    font-size: 30px;
+    width: 240px;
+    height: 30px;
+    margin-left: 27px; /*ESSA PORRA MOVE O INPUT DOS RESULTADOS*/
+    margin-top: -45px;
+    background-color: rgb(187, 194, 194);
+ 
+}
+/*clase para a fonte geral */
+.estilo-fonte {
+    font-size: 50px;
+    font-family: 'Flor Indie', cursive;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.texto-informativo { /*classe para a fonte do inicio, onde é apresentado o projeto */
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Flor Indie', cursive;
+    margin-left: 30px;
+    margin-top: 270px;
+    color: brown;
+}
+.direitos-autorais { /*criando classe para configurar o meu h4 no rodapé */
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Flor Indie', cursive;
+    margin-left: 30px;
+    margin-top: 10px;    
+    
+}
+.direitos-autorais a { /*removendo o link e alterando a cor do meu direito autoral no rodapé */
+    text-decoration: none;
+    color: black;
+}
+.aviso { /*configurando cor para aviso na tela da sessão mega-sena */
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Flor Indie', cursive;
+    margin-left: 30px;
+    margin-top: 210px;
+    color: brown;    
+}
+.aviso a { /*tirando link e cor azul do link reference em desenvolvedor */
+    text-decoration: none;
+    color: rgb(26, 223, 43);
+}
+.texto-informativo a {
+    text-decoration: none;
+    color: rgb(26, 223, 43);
+}
