@@ -17,23 +17,23 @@ p{
     font-size: 20pt;
 }
 body {
-    background-color: rgb(24, 24, 26);
+    background-color: rgb(0, 0, 0);
 }
 /* ---------------- APENAS DIVS ----------------- */
 div#interface {
     width: 1200px;
     height: 900px;
     margin-left: 65px;
-    background-color: rgb(19, 18, 18);
-    box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.5);
+    background-color: rgb(36, 36, 36);
+    box-shadow: 2px 2px 2px rgba(22, 15, 15, 0.5);
     border-radius: 7px 7px 7px 7px;
     position: absolute;
 }
 
 div#cabeca-direita {
     width: 1200px;
-    height: 140px;
-    background-color: rgb(26, 223, 43);
+    height: 141px;
+    background-color: rgb(6, 223, 24);
     border-radius: 7px 7px 7px 7px;
     box-shadow: 2px 2px 2px rgba(39, 39, 39, 0.5);
     position: absolute;
@@ -42,8 +42,8 @@ div#cabeca-direita {
 }
 div#navegacao {
     width: 1200px;
-    height: 60px;
-    background-color: rgb(26, 223, 43);
+    height: 61px;
+    background-color: rgb(4, 226, 23);
     position: absolute;
     margin-top: 150px;
 }
@@ -51,7 +51,7 @@ div#navegacao {
 div#rodape {
     width: 1200px;
     height: 50px;
-    background-color: rgb(26, 223, 43);
+    background-color: rgb(4, 223, 43);
     margin-top: 900px;
     border-radius: 7px 7px 7px 7px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
@@ -166,6 +166,7 @@ margin-left: 290px;
 box-shadow: 1px 1px rgb(0, 255, 34);
 
 }
+
 /* ----------- APENAS CLASSES PARA FUNÇÕES ESPECIAIS --------------- */
 .submeter { /*chamando classe do botão no formulário */
     font-family: 'Flor Indie', cursive;
