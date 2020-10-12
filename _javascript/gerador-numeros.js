@@ -4,7 +4,7 @@ function gerador(){ //função responsável por gerar 6 dezenas ao pressionar o 
 	
 	for (i = 1; i==6; i++)
 	{
-		  loteria = Math.floor(Math.random() * 60); 
+		loteria = Math.floor(Math.random() * 60); 
 	  document.getElementById(String(i)).innerHTML = loteria + 1;
 	}
-  }
+}
