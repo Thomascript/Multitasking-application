@@ -9,60 +9,60 @@
     <script type="text/javascript" src="_javascript/calculadora.js"></script>
 </head>
 <body>
-<div id="interface">
-<div id="cabeca">
-<div id="cabeca-direita">
-<h4 class="estilo-fonte">Calculadora</h4>
-</div>
-</div>
-<div id="navegacao">
-    <nav id="menu">
-        <ul>
-            <li><a href="pagina-inicial.html">Inicio</a></li>
-            <li><a href="calculadora.html">Calculadora</a></li>
-            <li><a href="formulario-pagamento.html">Formulário</a></li>
-            <li><a href="gerador-numeros.html">Mega Sena</a></li>
-        </ul>
-    </nav>
-<div id="campo_calculadora">
-<form id="calculadora_simples">
-<input type="text" name="nomeVisor" id="campoVisor" class="exibeResultado"/>
-<table id="calculos">
-    <tr>
-        <td><input type="button" name="numponto" class="simbolosEspeciais" value="." onclick="agrupar('.');"/></td>
-        <td><input type="button" name="numlimpa" class="simbolosEspeciais" value="C" onclick="limpar();"/></td>
-        <td><input type="button" name="numporcentagem" class="simbolosEspeciais" value="%" onclick="agrupar('/100');"/></td> <!--A função de porcentagem ainda está com um bug-->
-        <td><input type="button" name="numdividir" class="simbolosEspeciais" value="÷" onclick="agrupar('/');"/></td>
-    </tr>
-    <tr>
-        <td><input type="button" name="num7" class="numero" value="7" onclick="agrupar(7);"/></td>
-        <td><input type="button" name="num8" class="numero" value="8" onclick="agrupar(8);"/></td>
-        <td><input type="button" name="num9" class="numero" value="9" onclick="agrupar(9);"/></td>
-        <td><input type="button" name="nummultiplicar" class="simbolosEspeciais" value="*" onclick="agrupar('*');"/></td>
-    </tr>
-    <tr>
-        <td><input type="button" name="num4" class="numero" value="4" onclick="agrupar(4);"/></td>
-        <td><input type="button" name="num5" class="numero" value="5" onclick="agrupar(5);"/></td>
-        <td><input type="button" name="num6" class="numero" value="6" onclick="agrupar(6);"/></td>
-        <td><input type="button" name="nummenos" class="simbolosEspeciais" value="-" onclick="agrupar('-');"/></td>
-    </tr>
-    <tr>
-        <td><input type="button" name="num1" class="numero" value="1" onclick="agrupar(1);"/></td>
-        <td><input type="button" name="num2" class="numero" value="2" onclick="agrupar(2);"/></td>
-        <td><input type="button" name="num3" class="numero" value="3" onclick="agrupar(3);"/></td>
-        <td><input type="button" name="nummais" class="simbolosEspeciais" value="+" onclick="agrupar('+');"/></td>
-    </tr>
-    <tr>
-        <td><input type="button" name="num0" class="numero" value="0" onclick="agrupar(0)";/></td>
-        <td><input type="button" name="numigual" class="simbolosEspeciaisVermelhos" value="=" onclick=" calculos()"/></td>
-    </tr>
-</table>
-</form>
-</div>
-</div>
-<div id="rodape">
-    <h4 class="direitos-autorais">&#169 - Copyright - <a href="https://www.linkedin.com/in/thomas-william-8aa020173/" target="_blank">Thomas</a></h4>     
-</div>
-</div> 
+    <div id="interface">
+        <div id="cabeca">
+            <div id="cabeca-direita">
+                <h4 class="estilo-fonte">Calculadora</h4>
+            </div>
+        </div>
+        <div id="navegacao">
+            <nav id="menu">
+                <ul>
+                    <li><a href="pagina-inicial.html">Inicio</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="formulario-pagamento.html">Formulário</a></li>
+                    <li><a href="gerador-numeros.html">Mega Sena</a></li>
+                </ul>
+            </nav>
+            <div id="campo_calculadora">
+                <form id="calculadora_simples">
+                    <input type="text" name="nomeVisor" id="campoVisor" class="exibeResultado"/>
+                    <table id="calculos">
+                        <tr>
+                            <td><input type="button" name="numponto" class="simbolosEspeciais" value="." onclick="agrupar('.');"/></td>
+                            <td><input type="button" name="numlimpa" class="simbolosEspeciais" value="C" onclick="limpar();"/></td>
+                            <td><input type="button" name="numporcentagem" class="simbolosEspeciais" value="%" onclick="agrupar('/100');"/></td> <!--A função de porcentagem ainda está com um bug-->
+                            <td><input type="button" name="numdividir" class="simbolosEspeciais" value="÷" onclick="agrupar('/');"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" name="num7" class="numero" value="7" onclick="agrupar(7);"/></td>
+                            <td><input type="button" name="num8" class="numero" value="8" onclick="agrupar(8);"/></td>
+                            <td><input type="button" name="num9" class="numero" value="9" onclick="agrupar(9);"/></td>
+                            <td><input type="button" name="nummultiplicar" class="simbolosEspeciais" value="*" onclick="agrupar('*');"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" name="num4" class="numero" value="4" onclick="agrupar(4);"/></td>
+                            <td><input type="button" name="num5" class="numero" value="5" onclick="agrupar(5);"/></td>
+                            <td><input type="button" name="num6" class="numero" value="6" onclick="agrupar(6);"/></td>
+                            <td><input type="button" name="nummenos" class="simbolosEspeciais" value="-" onclick="agrupar('-');"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" name="num1" class="numero" value="1" onclick="agrupar(1);"/></td>
+                            <td><input type="button" name="num2" class="numero" value="2" onclick="agrupar(2);"/></td>
+                            <td><input type="button" name="num3" class="numero" value="3" onclick="agrupar(3);"/></td>
+                            <td><input type="button" name="nummais" class="simbolosEspeciais" value="+" onclick="agrupar('+');"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" name="num0" class="numero" value="0" onclick="agrupar(0)";/></td>
+                            <td><input type="button" name="numigual" class="simbolosEspeciaisVermelhos" value="=" onclick=" calculos()"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="rodape">
+            <h4 class="direitos-autorais">&#169 - Copyright - <a href="https://www.linkedin.com/in/thomas-william-8aa020173/" target="_blank">Thomas</a></h4>     
+        </div>
+    </div> 
 </body>
 </html>
